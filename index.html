@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("theme");
+
+        const system = window.matchMedia(
+          "(prefers-color-scheme: light)"
+        ).matches
+          ? "dark"
+          : "light";
+
+        const theme = saved || system;
+
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <title>My App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

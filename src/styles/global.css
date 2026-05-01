@@ -1,0 +1,17 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./themes.css";
+@import "./animations.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--font-size-md);
+
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  transition: background var(--transition-normal),
+              color var(--transition-normal);
+}

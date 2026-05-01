@@ -1,0 +1,172 @@
+.backgroundPanel {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0)
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0)
+  );
+
+  overflow: hidden;
+}
+
+.backgroundPanel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(199, 196, 196, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/images/floating-leafs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.4;
+
+  animation: float-leafs 6s ease-in-out infinite;
+}
+
+.backgroundPanel > * {
+  position: relative;
+  z-index: 2;
+}
+
+.frontPanel{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.title{
+    width: 30%;
+    min-width: 400px;
+    font-size: var( --font-size-2xl);
+    font-weight: bold;
+    text-align: center;
+
+    padding-bottom: 5%;
+}
+
+.namesContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 5%;
+}
+
+.name{
+    font-size: var( --font-size-3xl);
+    font-weight: bold;
+}
+
+.leftOrnament {    
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 200px;
+  height: 400px;
+
+  background-image: url("/images/branch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 0.9;
+
+  animation: float-left 6s ease-in-out infinite;
+}
+
+.rightOrnament {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 200px;
+  height: 400px;
+
+  background-image: url("/images/branch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  opacity: 0.9;
+
+  transform: translateY(50%) translateX(-50%) scale(2);
+  animation: float-right 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateY(50%) translateX(50%) scaleX(-1) scale(2);
+  }
+  50% {
+    transform: translateY(45%) translateX(50%) scaleX(-1) scale(2);
+  }
+  100% {
+    transform: translateY(50%) translateX(50%) scaleX(-1) scale(2);
+  }
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateY(50%) translateX(-50%) scale(2);
+  }
+  50% {
+    transform: translateY(45%) translateX(-50%) scale(2);
+  }
+  100% {
+    transform: translateY(50%) translateX(-50%) scale(2);
+  }
+}
+
+@keyframes float-leafs {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1%) translateX(1%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 800px) {
+  .leftOrnament, .rightOrnament {
+    opacity: 0;
+  }
+}
