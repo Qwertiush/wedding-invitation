@@ -9,9 +9,9 @@
 
 /* DARK */
 :root[data-theme="dark"] {
-  --color-bg: #111111;
-  --color-text: #f8fafc;
-  --color-primary: #60a5fa;
-  --color-card: #1e293b;
-  --color-border: #334155;
+  --color-bg: #ebe1d5;
+  --color-text: #111827;
+  --color-primary: #2563eb;
+  --color-card: #f3f4f6;
+  --color-border: #e5e7eb;
 }
