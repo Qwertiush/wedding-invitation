@@ -17,7 +17,14 @@ function App() {
 
     return slug
       .split("-")
-      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .map((part) => {
+          if(part != "i"){
+            return part.charAt(0).toUpperCase() + part.slice(1)
+          }
+          else{
+            return part
+          }
+      })
       .join(" ");
   }, [slug]);
 

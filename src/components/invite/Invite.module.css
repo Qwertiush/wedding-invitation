@@ -19,19 +19,20 @@
 }
 
 .title{
-    font-size: var(--font-size-2xl);
-    padding-bottom: 5%;
-}
-
-.name{
-    width: 400px;
-    font-size: var(--font-size-3xl);
-    padding-bottom: 5%;
+    width: 300px;
+    font-size: var(--font-size-xl);
+    padding-bottom: 2%;
     text-align: center;
 }
 
+.name {
+  font-size: var(--font-size-3xl);
+  padding-bottom: 2%;
+  text-align: center;
+}
+
 .description{
-    width: 400px;
+    width: 300px;
     text-align: center;
     font-size: var(--font-size-lg);
     padding-bottom: 1rem;
