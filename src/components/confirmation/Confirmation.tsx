@@ -6,7 +6,7 @@ export default function Confirmation() {
     <Section id="confirmation">
         <div className={styles.parentContainer}>
           <div className={styles.description}>
-            Bylibyśmy wdźięczni za potwierdzenie swojego przybycia do czerwca miesiąca pańskiego.
+            Bylibyśmy wdźięczni za potwierdzenie swojego przybycia do czerwca 2026 roku.
           </div>
         </div>
     </Section>

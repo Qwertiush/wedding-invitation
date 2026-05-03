@@ -8,9 +8,9 @@ export default function Gifts() {
         <div className={styles.parentContainer}>
           <div className={styles.overlay}>
             <div className={`${styles.description} reveal-down delay-1`}>
-              Nie musisz przyność, żednych kwiatów, czy prezentów.
+              Nie musisz przyność, żadnych kwiatów, czy prezentów.
               <br/>
-              Wystaczy że przyjdziesz z dobrym humorem i 💪 siłą 💪 na zabawę do białego rana :).
+              Wystaczy że przyjdziesz z dobrym humorem i 💪 siłą 💪 na zabawę do białego rana 😊.
             </div>
             <div className={styles.divider}></div>
             <div className={`${styles.description2} reveal-up delay-2`}>

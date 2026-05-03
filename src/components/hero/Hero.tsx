@@ -10,11 +10,11 @@ export default function Hero() {
           <div className={`${styles.leftOrnament}`}></div>
           <div className={styles.rightOrnament}></div>
           <div className={styles.frontPanel}>
-            <div className={`${styles.title} reveal-down delay-1`}>Zaproszenie na uroczystość zaślubin</div>
+            <div className={`${styles.title} reveal-down delay-1`}>Zaproszenie na ślub</div>
             <div className={styles.namesContainer}>
-              <div className={`${styles.name} reveal-left delay-2`} >Jedna osoba</div>
+              <div className={`${styles.name} reveal-left delay-2`} >Roma Nowaczyk</div>
               <div className={`${styles.name} reveal delay-2`}>i</div>
-              <div className={`${styles.name} reveal-right delay-2`}>Druga osoba</div>
+              <div className={`${styles.name} reveal-right delay-2`}>Robert Rycerz</div>
             </div>
             <div className='reveal-up delay-2-1'>
               <ScrollButton target='invitation'>▽ Otwórz zaproszenie ▽</ScrollButton>

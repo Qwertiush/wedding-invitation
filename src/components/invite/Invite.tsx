@@ -26,8 +26,8 @@ export default function Invite({fullName} : Props) {
             )}
           </div>
           <div className={`${styles.title} reveal-down delay-2`}>Mam zaszczyt zaprosić {isCouple ? "Was" : "Cię wraz z osobą towarzyszącą"}</div>
-          <div className={`${styles.description} reveal-up delay-2-1`}>Na uroczystość weselenia sie</div>
-          <div className={`${styles.description} reveal-up delay-2-1`}>Która odbędzie się 20.20.2000 roku pańskiego, pod Kasztanem o godzinie 17:00, czyli w samo południe.</div>
+          <div className={`${styles.description} reveal-up delay-2-1`}>na uroczystość weselną</div>
+          <div className={`${styles.description} reveal-up delay-2-1`}>która odbędzie się <span>14.08.2026r.</span> w <span>Pałacu Jaśminowym</span>, ul. zakrzewska 15, 62-080 <span>Batorowo</span> o godzinie <span>15 : 00</span>.</div>
           <div className='reveal-up delay-2-2'>
             <ScrollButton target='gifts'>▽ Więcej informacji ▽</ScrollButton>
           </div>
